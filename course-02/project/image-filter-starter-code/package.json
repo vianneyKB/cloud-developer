@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf www/ || true",
-    "build": "npm run clean && tsc && cp package.json www/package.json && mkdir www/tmp/ && cd www && zip -r Archive.zip . && cd ..",
+    "build": "npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && tar -cf Archive.zip . && cd ..",
     "dev": "ts-node-dev --respawn --transpile-only ./src/server.ts"
   },
   "repository": {
@@ -28,6 +28,7 @@
     "typescript": "^3.5.3"
   },
   "dependencies": {
+    "dotenv": "^16.0.2",
     "express": "^4.17.1",
     "jimp": "^0.16.0",
     "lodash": "^4.17.15",
