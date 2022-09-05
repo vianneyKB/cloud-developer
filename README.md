@@ -4,6 +4,15 @@
 
 content for Udacity's cloud developer nanodegree.
 
+<<<<<<< HEAD
+# EB Link
+
+Udagram-vianney-dev-dev.us-east-1.elasticbeanstalk.com
+
+# Project 2 Link
+
+http://image-filter-vianney-dev-dev.us-east-1.elasticbeanstalk.com/
+=======
 # Master Role
 
 # just a role added to the master when changes happen
@@ -35,3 +44,4 @@ Here is the repository structure:
 ```
 
 > > > > > > > 3f96a6d358ee905f2e78fc556354cec3788b2f89
+>>>>>>> master
